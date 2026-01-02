@@ -12,10 +12,10 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "start": "next start",
-    "deploy": "vercel deploy",
+    "deploy": "next deploy --webpack",
     "deps:upgrade": "[ -z $GITHUB_ACTIONS ] && pnpm up -L notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:update on CI'",
     "deps:link": "[ -z $GITHUB_ACTIONS ] && run-s deps:link:* || echo 'Skipping deps:update on CI'",
     "deps:unlink": "[ -z $GITHUB_ACTIONS ] && pnpm add notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:update on CI'",
