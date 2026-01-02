@@ -37,6 +37,8 @@ export default withBundleAnalyzer({
     return config
   },
 
+  turbopack: {},
+
   // See https://react-tweet.vercel.app/next#troubleshooting
   transpilePackages: ['react-tweet']
 })
