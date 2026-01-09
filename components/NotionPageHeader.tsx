@@ -45,8 +45,6 @@ export function NotionPageHeader({
 
   return (
     <header className='notion-header'>
-      <script src='https://cdn.commoninja.com/sdk/latest/commonninja.js' defer></script>
-      <div className='commonninja_component pid-aeca4d70-806e-42d8-8955-47175a21b69e'></div>
       <div className='notion-nav-header'>
         <Breadcrumbs block={block} rootOnly={true} />
 
