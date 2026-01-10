@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
           </Head>
 
           <body>
+            <script async src='https://www.googletagmanager.com/gtag/js?id=G-NP2X3F85J0'></script>
             <script
               dangerouslySetInnerHTML={{
                 __html: `
@@ -56,6 +57,11 @@ export default class MyDocument extends Document {
     localStorage.setItem(storageKey, JSON.stringify(isDarkMode))
   }
 })();
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-NP2X3F85J0');
 `
               }}
             />
